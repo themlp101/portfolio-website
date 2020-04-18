@@ -1,5 +1,7 @@
-header div h1 {
+.site-navigation {
   background-color: rgb(19, 155, 109);
   margin-top: 0;
-  
+  color: #fff;
+  padding: 5px 10px;
+
 }
