@@ -10,17 +10,139 @@
 
   </head>
 
+<body>
+<!--- Begin Header --->
+<header>
+  <div>
+    <nav class="nav">
+        <ul>
+          <div style="float:left; margin: 1%">
+              <h1 class="caps"><a href="index.html">Welcome!</a></h1>
+          </div>
+          <li><a href="contact" class="button">Contact Me</a></li>
+          <li><a href="services" class="button">Services</a></li>
+          <li><a href="projects" class="button">Projects</a></li>
+          <li><a href="about" class="button">About</a></li>
+          <li><a href="index.html" class="button">Home</a></li>
+        </ul>
+      </nav>
+  </div>
+</header>
+<!--- End Header --->
 
-
-  <body>
-    <header>
-      <div class="site-navigation-wrapper">
-        <h1>Hello World!</h1>
+<!--- Page Divider --->
+<div class="gap-sm">
+  <br>
+</div>
+<!--- Main text --->
+    <main class="main-wrapper">
+      <section class="sections box-shadow">
+        <div>
+          <h2 id="about">Who am I?</h2>
+          <div class="face-image">
+            <img src="images/dark-face.jpg" width="250" class="image" alt="My Face on Portrat Mode">
+          </div>
+          <p>I am an up and coming software deveolper! I am very "green" to tech
+        but I am very excited about all the possibilities this journey can lead me!
+        So far I have enjoyeed learning fundamental front-end developer skills. </p>
+          <ul>
+            <li><b>Who</b> am I? My name is Matt Patterson!</li>
+            <li><b>Where</b> are you? I currently live about 45 miles south of <i>Washington D.C.</i></li>
+            <li><b>What</b> you do? I am studying software engineering!</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Well what about <i>me</i>?</h2>
+            <p>I am currently studying to become a software engineer and taking the steps
+          necessary to understand the foundations of front-end development. But in the
+          meantime I love playing guitar, reading Stephen King, watching horror movies
+          and the occasional brain-less reality tv show! Hopefully, I can take my passion
+          for music and help devolop or create a music learning app to help others overcome
+          some of the difficulties of learning an instrument by yourself.</p>
+        </div>
+      </section>
+<!--- Page Break --->
+<div class="gap-sm">
+    <br>
+</div>
+<!--- New Section --->
+    <section class="sections box-shadow">
+      <div>
+        <h2 id="projects">Project Ideas <small>(in no given order)</small><h2>
       </div>
-    </header>
+        <div>
+          <ul>
+            <li>Music learning app</li>
+            <li>Cure world hunger</li>
+            <li>Wrap my head around Object Oriented Programming</li>
+          </ul>
+        </div>
+        <div>
+          <h2 id="services">Services<h2>
+        </div>
+        <div>
+            <ol>
+              <li>Front-End Develpment</li>
+              <li>Javascript</li>
+              <li>HTML/CSS</li>
+            </ol>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h2 id="contact">Contact</h2>
+        </div>
+        <div class="contact-container">
+          <form action="/contact-page.php">
+            <div class="row">
+              <div class="cl-25">
+                <label for="firstname"><h3>First Name<h3></label>
+              </div>
+              <div class="cl-75">
+                <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="cl-25">
+                <label for="lastname"><h3>Last Name</h3></label>
+              </div>
+              <div class="cl-75">
+                <input type="text" style="font-size:small" id="lastname" name="lastname" placeholder="Your lastname..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="cl-25">
+                <label for="subject"><h3>Subject</h3></label>
+              </div>
+              <div class="cl-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="font-family:monospace;height:200px; width:400px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input class="button box-shadow" type="submit" value="Hello!">
+            </div>
+            </form>
+          </div>
 
-    <p>Lorem ipsum dolor sit amet,</p>
-    <p>This is a sample paragraph</p>
+      </section>
+<!--- End of Page --->
 
+  </main>
+
+
+
+<!--- end of main text --->
+
+<!--- Footer --->
+
+    <footer class="main-footer">
+      <div>
+        <h3>Copyright<h3>
+      </div>
+      <div>
+        <a href="https://twitter.com/">Twitter</a>
+      </div>
+    </footer>
+<!--- End of Footer --->
   </body>
 </html>
