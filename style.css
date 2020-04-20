@@ -199,7 +199,7 @@ when width is less than 600 pixels*/
 
 .main-footer h3,
 .contact-container h3, .sections h3,
-.contact-container input {
+.contact-container input, label {
   color: #fff;
   font-weight: 700;
   font-family: 'Share Tech Mono', monospace;
