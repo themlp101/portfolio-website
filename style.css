@@ -60,7 +60,14 @@ body {
   padding: 5em;
   width: 100%;
   border-radius: 10px;
+}
 
+.project-image {
+  border-radius: 5px;
+  float: right;
+  margin: 2em;
+  padding: 0;
+  cursor: pointer;
 }
 
 
@@ -152,7 +159,7 @@ when width is less than 600 pixels*/
 
 .sections p, .sections ol,
 .sections ul {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Baloo Paaji 2", cursive;
   margin: auto;
   color: white;
@@ -162,7 +169,7 @@ when width is less than 600 pixels*/
 .nav-wrapper h1 {
   color: #fff;
   font-weight: 700;
-  font-family: 'Share Tech Mono', monospace;;
+  font-family: 'Share Tech Mono', monospace;
   text-align: center;
   font-size: 3em;
 }
@@ -191,7 +198,7 @@ when width is less than 600 pixels*/
 }
 
 .main-footer h3,
-.contact-container h3,
+.contact-container h3, .sections h3,
 .contact-container input {
   color: #fff;
   font-weight: 700;
@@ -204,7 +211,7 @@ when width is less than 600 pixels*/
 
 .sections h2 {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 2rem;
 }
 
@@ -217,6 +224,7 @@ when width is less than 600 pixels*/
 .box-shadow {
   box-shadow: 0px 0px 3px grey;
 }
+
 
 
 /* Link decoration */
