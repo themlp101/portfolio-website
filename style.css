@@ -1,243 +1,239 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Roboto|Share+Tech+Mono&display=swap');
 
-/* Navigation */
+/* 
+1. Navigation Bar
+2. Body - Sections
+3. Footer
+4. Text Decorations
+5. Images
+6. Media Queries
 
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  background-color: rgb(8, 64, 45);
-  border-radius: 0px 0px 5px 5px;
-  margin: 0;
-  top: 0;
-  padding: 0;
-  position: fixed;
-  overflow: hidden;
+
+*/
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: hsl(160, 78%, 14%);
+    border-radius: 0px 0px 5px 5px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    justify-content: space-between;
 }
+
 .left-side {
-  margin-left: 50px;
-}
-.nav-wrapper > .right-side > ul {
-  list-style-type: none;
-  margin-right: 50px;
-  margin-top: 50px;
-  display: flex;
+    margin-left: 50px;
+  }
+
+.navbar > .right-side > ul {
+    list-style-type: none;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
 }
 
-/* Main body */
+.navbar h1 {
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size: 3em;
+}
+  
+.nav-wrapper .right-side a  {
+    font-weight: 700;
+}
+  
+.nav-wrapper .right-side a:hover {
+    cursor: pointer;
+    background-color: rgba(255, 144, 40, .2);
+    margin: 3px;
+}
+
+/*  Body */
 
 body {
-  background-image: url("images/dark-green-background.jpg");
-  background-repeat: repeat;
-  margin: 0;
-
+    background-image: url("images/dark-green-background.jpg");
+    background-repeat: repeat;
+    margin: 0;
+    height: 100em;
 }
 
-.main-wrapper {
-  max-width: 50%;
-  min-width: 30%;
-  margin: auto;
+.section-bg-primary {
+    background-color: rgba(13, 40, 52, 80%);
+    padding: 5em;
+    width: 75%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2em;
+    overflow: hidden;
 }
 
-
-.image {
-  border-radius: 50%;
-  float: right;
-  margin: 15px;
-  padding: 0;
-  width: 300px;
-  height: 400px;
-  cursor: pointer;
+.margin-top {
+    margin-top: 10em;
 }
 
-.gap-sm {
-  margin: 5em;
-  background-color: transparent;
-}
-
-.sections {
-  background-color: rgba(13, 40, 52, 80%);
-  padding: 5em;
-  width: 100%;
-  border-radius: 10px;
+.face-image {
+    border-radius: 50%;
+    margin: 15px;
+    padding: 0;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
 }
 
 .project-image {
-  border-radius: 5px;
-  float: right;
-  margin: 2em;
-  padding: 0;
-  cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    margin: 2em;
+    padding: 0;
+    cursor: pointer;
 }
 
-
-/* Contacts Form */
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px; solid #fff;
-  border-radius: 5px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: transparent;
-  color: white;
-  padding: 6px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: rgb(225, 144, 23, 10%);
-}
-
-.contact-container {
-  border-radius: 5px;
-  background-color: transparent;
-  padding: 10px;
-}
-
-.cl-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.cl-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-.row {
-  display: inline-grid;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* For Responsive Layout -- Makes colums(.cl-25 & .cl-75) stack each on top of each other
-when width is less than 600 pixels*/
-
-@media screen and (max-width: 600px) {
-  .cl-25, .cl-75, input[type=submit] {
+.section-wrapper {
     width: 100%;
-    margin-top: 0;
+}
+
+.section-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-item, .contact-item, .contact-item-triple {
+    flex: 1;
+    padding: 1.5em;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 3px grey;
+}
+
+.contact-group {
+    display: flex;
+    flex: direction;
+}
+
+.contact-item-triple {
+    flex: 3;
+}
+
+/* Footer */
+
+.footer-bg-primary {
+    background-color: #000;
+    padding: 0;
+    margin-top: 30em;
+    width: 100%;
+    overflow: hidden;
   }
+  
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+    
 }
 
-/*  Footer  */
+.footer-group p {
+    color: hsl(29, 100%, 58%);
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+}
 
-.main-footer {
-  margin-top: 800px;
-  background-color: #000;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
+.footer-item {
+    flex: 1;
+    align-self: flex-start;
+}
+
+.iframe {
+    order: 5;
+    margin-right: 10em;
 }
 
 
-/* Text and Lists decoration */
+/* Body Text Decorations */
 
 .caps {
-  text-transform: uppercase;
-  letter-spacing: .2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
 }
 
-.sections p, .sections ol,
-.sections ul {
+.section-group p, ol, ul, h3 {
   font-size: 18px;
   font-family: "Baloo Paaji 2", cursive;
   margin: auto;
   color: white;
   padding: 2rem;
 }
-
-.nav-wrapper h1 {
-  color: #fff;
-  font-weight: 700;
-  font-family: 'Share Tech Mono', monospace;
-  text-align: center;
-  font-size: 3em;
-}
-
-.nav-wrapper .right-side a  {
-  font-weight: 700;
-}
-
-.nav-wrapper .right-side a:hover {
-  cursor: pointer;
-  background-color: rgba(255, 144, 40, .2);
-  margin: 3px;
+.section-bg-primary h2 {
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem;
 }
 
 .button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  padding: 4px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-  margin: .4em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    margin: .4em;
 }
 
-.main-footer h3,
-.contact-container h3, .sections h3,
-.contact-container input, label {
+.contact-container label {
   color: #fff;
   font-weight: 700;
   font-family: 'Share Tech Mono', monospace;
 }
 
-.main-footer a {
-  font-size: 14px;
+
+
+
+  /* Text Decorations */
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  
+  a:link {color: hsl(29, 100%, 58%)}
+  a:visited {color: orange}
+  a:hover {color: white}
+  a:active {color: red}
+
+/* Media Query */
+
+@media all and (min-width: 800px) {
+    .section-group {
+        flex-direction: row;
+    }
+
+    .footer-group {
+        flex-direction: row;
+    }
+
+    
 }
 
-.sections h2 {
-  color: #fff;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 2rem;
-}
-
-.contact-container input {
-  font-size: 2rem;
-
-}
-
-
-.box-shadow {
-  box-shadow: 0px 0px 3px grey;
-}
 
 
 
-/* Link decoration */
 
 
-a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Share Tech Mono', monospace;
-}
 
 
-a:link {color: rgba(255, 144, 40)}
-a:visited {color: orange}
-a:hover {color: white}
-a:active {color: red}
+

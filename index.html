@@ -1,179 +1,155 @@
 <!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Portfoio Website</title>
-    <link rel="stylesheet" href="normalize.css" type="text/css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+</head>
 
-  </head>
 
 <body>
-
-<!-- Begin Header -->
-
-<header>
-  <nav class="nav-wrapper">
-    <div class="left-side">
-      <h1 class="caps"><a href="index.html">Matt Patterson</a></h1><br>
-    </div>
-    <div class="right-side">
-      <ul>
-        <li><a href="index.html" class="button">Home</a></li>
-        <li><a href="#about" class="button">About</a></li>
-        <li><a href="#projects" class="button">Projects</a></li>
-        <li><a href="#services" class="button">Services</a></li>
-        <li><a href="#contact" class="button">Contact Me</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<!-- End Header -->
-
-<!-- Page Divider -->
-<div class="gap-sm">
-  <br>
-</div>
-
-<!-- Main text -->
-  <main class="main-wrapper">
-    <section class="sections box-shadow">
-      <div>
-        <h2>Bio</h2>
-          <div>
-            <img src="images/dark-face.jpg" width="250" class="image" alt="My Face on Portrait Mode">
-          </div>
-        <p>I am an up and coming software developer! I am very "green" to tech
-        but I am very excited about all the possibilities this journey can lead me!
-        So far I have enjoyed learning fundamental front-end developer skills. </p>
-        <ul>
-          <li><b>Who</b> am I? My name is Matt Patterson!</li>
-          <li><b>Where</b> am I? I currently live about 45 miles south of <i>Washington D.C.</i></li>
-          <li><b>What</b> I do? I am studying software engineering!</li>
-        </ul>
-      </div>
-      <div>
-        <h3 id="about">Well what about <i>me</i>?</h3>
-        <p>I am currently studying to become a software engineer and taking the steps
-        necessary to understand the foundations of front-end development. But in the
-        meantime I love playing guitar, reading Stephen King novels, watching horror movies
-        and the occasional brain-less reality tv show! Hopefully, I can take my passion
-        for music and help develop or create a music learning app to help others overcome
-        some of the difficulties of learning an instrument by yourself.</p>
-      </div>
-    </section>
-<!-- Page Break -->
-<div class="gap-sm">
-    <br>
-</div>
-<!-- Continued main text after break. -->
-    <section class="sections box-shadow">
-      <div>
-        <h2 id="projects">Projects <small>(in no given order)</small></h2>
-      </div>
-        <div>
-          <h3><i>You Can Solo</i> -- guitar learning mobile app</h3>
-
-            <img src="images/app-image.jpg" height="300" width="400" class="project-image" alt="Image Credit(Future)">
-
-            <p>This app helps the beginner, even advanced player, dive deeper into music theory
-            and their own creativity by generating an unlimited amount of chord progressions
-            accompanied by scales patterns, triads and other techniques to get the player playing with  purpose!
-            <i>You Can Solo</i> will help any musician struggling to play different ideas over the chords they already know and love.
-            MIDI jam tracks, with authentic instruments, are available for free with more instruments coming soon. Includes over
-            100+ unique scales, patterns and melodic devices. <br><a href="https://github.com/themlp101" target="_blank">You Can Solo GitHub Repo</a>
-            <br><a href="https://github.com/themlp101" target="_blank">You Can Solo - Official Website</a></p>
-
-            <h3>Skills Used</h3>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="left-side">
+            <h1 class="caps"><a href="index.html">Matt Patterson</a></h1><br>
+        </div>
+        <div class="right-side">
             <ul>
-              <li>Swift 3.0</li>
-              <li>UI/UX design concepts</li>
-              <li>JSON-JavaScript Object Notation</li>
-              <li>Apple Xcode IDE</li>
-              <li>Spatial reasoning and Apple's design and human interface guidelines</li>
-              <li>Countless hours playing and listening to Phish, Grateful Dead and The Allman Brothers Band tunes</li>
+              <li><a href="index.html" class="button">Home</a></li>
+              <li><a href="#about" class="button">About</a></li>
+              <li><a href="#projects" class="button">Projects</a></li>
+              <li><a href="#services" class="button">Services</a></li>
+              <li><a href="#contact" class="button">Contact Me</a></li>
             </ul>
+          </div>
+    </nav>
+    <!-- End Navigation Bar -->
+<main>
+    <!-- Bio Section -->
+    <div class="section-bg-primary margin-top box-shadow">
+        <div class="section-wrapper">
+            <h2>Bio</h2>
+            <section class="section-group">
+                
+                <div class="section-item"> 
+                    <p>I am an up and coming software developer! I am very "green" to tech
+                        but I am very excited about all the possibilities this journey can lead me!
+                        So far I have enjoyed learning fundamental front-end developer skills. 
+                    </p>
+                    <ul>
+                        <li><b>Who</b> am I? My name is Matt Patterson!</li>
+                        <li><b>Where</b> am I? I currently live about 45 miles south of <i>Washington D.C.</i></li>
+                        <li><b>What</b> I do? I am studying software engineering!</li>
+                    </ul>
+                </div>
+                <div class="section-item"> 
+                    <img src="images/dark-face.jpg" width="250" class="face-image" alt="My Face on Portrait Mode">
+                </div>
+            </section>
+            <section class="section-group">
+                <div class="section-item">
+                    <p>I am currently studying to become a software engineer and taking the steps
+                        necessary to understand the foundations of front-end development. But in the
+                        meantime I love playing guitar, reading Stephen King novels, watching horror movies
+                        and the occasional brain-less reality tv show! Hopefully, I can take my passion
+                        for music and help develop or create a music learning app to help others overcome
+                        some of the difficulties of learning an instrument by yourself.
+                    </p>
+                </div>
+            </section>
         </div>
-        <div>
-          <h2 id="services">Services</h2>
-        </div>
-        <div>
-            <ol>
-              <li>Front-End Development</li>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-            </ol>
-        </div>
-        <br>
-        <br>
-<!-- Contact From -->
-        <div>
-          <h2 id="contact">Contact</h2>
-            <h3>Feel Free to touch base!</h3>
-            <ul style="list-style-type: none">
-              <li><a href="https://github.com/themlp101" target="_blank">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/matt-patterson-02265175/" target="_blank">LinkedIn</a></li>
-              <li><a href="mailto:themlp@icloud.com">Send me an email!</a></li>
-            </ul>
-        </div>
-        <div class="contact-container">
-          <form action="/contact-page.php">
-            <div class="row">
-              <div class="cl-25">
-                <label for="firstname">First Name</label>
-              </div>
-              <div class="cl-75">
-                <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name..">
-              </div>
+    </div>
+    <!-- Projects Section -->
+    <div class="section-bg-primary box-shadow">
+        <h3><i>You Can Solo</i> -- guitar learning mobile app</h3>
+        <section class="section-group">
+            
+            <div class="section-item">
+                <img src="images/app-image.jpg" height="300" width="400" class="project-image" alt="Image Credit(Future)">
             </div>
-            <div class="row">
-              <div class="cl-25">
-                <label for="lastname">Last Name</label>
-              </div>
-              <div class="cl-75">
-                <input type="text" style="font-size:small" id="lastname" name="lastname" placeholder="Your lastname..">
-              </div>
+            <div class="section-item">
+                <p>This app helps the beginner, even advanced player, dive deeper into music theory
+                    and their own creativity by generating an unlimited amount of chord progressions
+                    accompanied by scales patterns, triads and other techniques to get the player playing with  purpose!
+                    <i>You Can Solo</i> will help any musician struggling to play different ideas over the chords they already know and love.
+                    MIDI jam tracks, with authentic instruments, are available for free with more instruments coming soon. Includes over
+                    100+ unique scales, patterns and melodic devices. <br><a href="https://github.com/themlp101" target="_blank">You Can Solo GitHub Repo</a>
+                    <br><a href="https://github.com/themlp101" target="_blank">You Can Solo - Official Website</a></p>
             </div>
-            <div class="row">
-              <div class="cl-25">
-                <label for="subject">Subject</label>
-              </div>
-              <div class="cl-75">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="font-family:monospace;height:200px; width:400px"></textarea>
-              </div>
+            <div>
+        </section>    
+        <section class="section-group">
+            <div class="section-item">
+                <ul>
+                    <h3>Skills Used</h3>
+                    <li>Swift 3.0</li>
+                    <li>UI/UX design concepts</li>
+                    <li>JSON-JavaScript Object Notation</li>
+                    <li>Apple Xcode IDE</li>
+                    <li>Spatial reasoning and Apple's design and human interface guidelines</li>
+                    <li>Countless hours playing and listening to Phish, Grateful Dead and The Allman Brothers Band tunes</li>
+                </ul>
             </div>
-            <div class="row">
-              <input class="button box-shadow" type="submit" value="Hello!">
+            <div class="section-item">
+                <ol>
+                    <h2 id="services">Services</h2>
+                    <li>Front-End Development</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                </ol>
             </div>
-          </form>
+        </section>
+        
+
+        <!-- Contacts Form -->
+        <h2>Contact Me</h2>
+        <section class="section-group">
+            
+            <div class="contact-container section-item">
+                <div class="contact-item">
+                    <label for="firstname">First Name</label>                    
+                    <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name..">
+                </div>
+                <div class="contact-item">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" style="font-size:small" id="lastname" name="lastname" placeholder="Your lastname..">
+                </div>
+                <div class="contact-item-triple">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="font-family:monospace;"></textarea>
+                    <input class="button box-shadow" type="submit" value="Hello!">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+</main>
+
+<!-- Footer Section -->
+
+<div class="footer-bg-primary">
+    <footer class="footer-wrapper">
+        <div class="footer-group">
+            <div class="footer-item">
+                <ul style="list-style-type: none">
+                    <li><p>Copyright</p></li>
+                    <li><p>Feel Free to touch base!</p></li>
+                    <li><a href="https://github.com/themlp101" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/matt-patterson-02265175/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:themlp@icloud.com">Send me an email!</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="iframe">
+                <iframe style="border-radius: 10px; border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50096.83387819755!2d-77.4612981747585!3d38.30146024473374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587311706288!5m2!1sen!2sus" width="500" height="250" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
-
-<!-- End of Contact Form -->
-
-      </section>
-
-<!-- End of Page -->
-
-  </main>
-
-
-
-<!-- end of main text -->
-
-<!-- Footer -->
-
-    <footer class="main-footer">
-      <div>
-        <h3>Copyright</h3>
-        <a href="mailto:themlp@icloud.com">Send me an email!</a><br>
-        <a href="https://twitter.com/" target="_blank">Twitter</a>
-      </div>
-      <div>
-        <iframe style="border-radius: 10px; border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50096.83387819755!2d-77.4612981747585!3d38.30146024473374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587311706288!5m2!1sen!2sus" width="200" height="125" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
+        
     </footer>
-<!-- End of Footer -->
-  </body>
+</div>
+
+</body>
 </html>
