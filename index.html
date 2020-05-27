@@ -10,23 +10,24 @@
 
 
 <body>
-    <!-- Top Navigation Bar --> 
-    <nav class="navbar">
-        <div class="left-side">
-            <h1 class="caps"><a href="index.html">Matt Patterson</a></h1><br>
-        </div>
-        <div class="right-side">
-            <ul>
+    <!-- Top Navigation Bar -->
+    
+    <header>
+        <h1 class="caps">Matt Patterson</h1>
+        <nav>
+            <ul id="navbar">
               <li><a href="index.html" class="button">Home</a></li>
               <li><a href="#about" class="button">About</a></li>
               <li><a href="#projects" class="button">Projects</a></li>
               <li><a href="#services" class="button">Services</a></li>
               <li><a href="#contact" class="button">Contact Me</a></li>
             </ul>
-          </div>
-    </nav>
+        </nav>
+    </header> 
+    
+    
     <!-- End Navigation Bar -->
-<main>
+    <main>
     <!-- Bio Section -->
     <div class="section-bg-primary margin-top box-shadow">
         <div class="section-wrapper">
@@ -62,11 +63,11 @@
         </div>
     </div>
     <!-- Projects Section -->
-    <div class="section-bg-primary box-shadow">
+    <div class="section-bg-primary margin-top box-shadow">
         <h3><i>You Can Solo</i> -- guitar learning mobile app</h3>
         <section class="section-group">
             
-            <div class="section-item">
+            <div class="section-item app-picture">
                 <img src="images/app-image.jpg" height="300" width="400" class="project-image" alt="Image Credit(Future)">
             </div>
             <div class="section-item">
@@ -107,30 +108,28 @@
         <h2>Contact Me</h2>
         <section class="section-group">
             
-            <div class="contact-container section-item">
+            <form class="contact-container section-item">
                 <div class="contact-item">
                     <label for="firstname">First Name</label>                    
                     <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name..">
-                </div>
-                <div class="contact-item">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" style="font-size:small" id="lastname" name="lastname" placeholder="Your lastname..">
+                    <label for="email">Email</label>
+                    <input type="email" style="font-size:small" id="email" name="email" placeholder="Your email..">
                 </div>
                 <div class="contact-item-triple">
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="font-family:monospace;"></textarea>
                     <input class="button box-shadow" type="submit" value="Hello!">
                 </div>
-            </div>
+            </form>
         </section>
     </div>
 
 
-</main>
+    </main>
 
 <!-- Footer Section -->
 
-<div class="footer-bg-primary">
+<div class="footer-bg-primary margin-top">
     <footer class="footer-wrapper">
         <div class="footer-group">
             <div class="footer-item">

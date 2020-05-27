@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Roboto|Share+Tech+Mono&display=swap');
 
+
 /* 
 1. Navigation Bar
 2. Body - Sections
@@ -13,47 +14,45 @@
 
 /* Navigation Bar */
 
-.navbar {
-    display: flex;
-    width: 100%;
+
+
+header { 
     background-color: hsl(160, 78%, 14%);
     border-radius: 0px 0px 5px 5px;
+    display: block;
     top: 0;
-    margin: 0;
-    padding: 0;
     position: fixed;
-    overflow: hidden;
-    justify-content: space-between;
+    z-index: 100;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-.left-side {
-    margin-left: 50px;
-  }
-
-.navbar > .right-side > ul {
-    list-style-type: none;
-    margin-right: 50px;
-    margin-top: 50px;
+header nav { 
     display: flex;
+    justify-content: center;    
 }
 
-.navbar h1 {
-    color: #fff;
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header h1 {
     font-weight: 700;
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
     font-size: 3em;
+    margin: auto;
 }
   
-.nav-wrapper .right-side a  {
-    font-weight: 700;
-}
-  
-.nav-wrapper .right-side a:hover {
-    cursor: pointer;
-    background-color: rgba(255, 144, 40, .2);
-    margin: 3px;
-}
+
 
 /*  Body */
 
@@ -61,17 +60,19 @@ body {
     background-image: url("images/dark-green-background.jpg");
     background-repeat: repeat;
     margin: 0;
-    height: 100em;
+}
+
+section {
+    align-items: center;
 }
 
 .section-bg-primary {
     background-color: rgba(13, 40, 52, 80%);
-    padding: 5em;
-    width: 75%;
+    padding: 20px;
+    width: 600px;
     border-radius: 10px;
-    margin: auto;
-    margin-top: 2em;
-    overflow: hidden;
+    align-self: center;
+
 }
 
 .margin-top {
@@ -102,12 +103,11 @@ body {
 .section-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .section-item, .contact-item, .contact-item-triple {
-    flex: 1;
-    padding: 1.5em;
+    margin: 10px;
 }
 
 .box-shadow {
@@ -118,9 +118,16 @@ body {
     display: flex;
     flex: direction;
 }
+.contact-container {
+    width: 100%;
+}
 
 .contact-item-triple {
     flex: 3;
+}
+
+form label {
+    display: inline;
 }
 
 /* Footer */
@@ -128,9 +135,7 @@ body {
 .footer-bg-primary {
     background-color: #000;
     padding: 0;
-    margin-top: 30em;
     width: 100%;
-    overflow: hidden;
   }
   
 .footer-group {
@@ -138,8 +143,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 2em;
-    
+    padding: 2em;   
 }
 
 .footer-group p {
@@ -148,23 +152,15 @@ body {
     font-family: 'Share Tech Mono', monospace;
 }
 
-.footer-item {
-    flex: 1;
-    align-self: flex-start;
-}
-
 .iframe {
-    order: 5;
+    
     margin-right: 10em;
 }
 
 
 /* Body Text Decorations */
 
-.caps {
-    text-transform: uppercase;
-    letter-spacing: .2em;
-}
+
 
 .section-group p, ol, ul, h3 {
   font-size: 18px;
@@ -202,6 +198,15 @@ body {
 
 
   /* Text Decorations */
+ .caps {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+  header h1 {
+    color: hsl(29, 100%, 58%);
+    padding: 0;
+    margin: 10px;
+  }
 
   a {
     color: white;
@@ -217,16 +222,47 @@ body {
 
 /* Media Query */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
     .section-group {
         flex-direction: row;
+    }
+
+    .section-item {
+        margin-right: 30px;
     }
 
     .footer-group {
         flex-direction: row;
     }
 
-    
+    form label {
+        display: block;
+    }
+
+    header { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-right: 20px;
+    }
+
+    header nav ul li a:hover {
+        cursor: pointer;
+        background-color: rgba(255, 144, 40, .2);
+        margin: 3px;
+    }
+
+    .section-bg-primary {
+        align-self: center;
+        width: 100%;
+    }
 }
 
 
