@@ -30,7 +30,7 @@
     <main>
     <!-- Bio Section -->
     <div class="section-bg-primary margin-top box-shadow">
-        <div class="section-wrapper">
+        <div>
             <h2>Bio</h2>
             <section class="section-group">
                 
@@ -44,13 +44,6 @@
                         <li><b>Where</b> am I? I currently live about 45 miles south of <i>Washington D.C.</i></li>
                         <li><b>What</b> I do? I am studying software engineering!</li>
                     </ul>
-                </div>
-                <div class="section-item"> 
-                    <img src="images/dark-face.jpg" width="250" class="face-image" alt="My Face on Portrait Mode">
-                </div>
-            </section>
-            <section class="section-group">
-                <div class="section-item">
                     <p>I am currently studying to become a software engineer and taking the steps
                         necessary to understand the foundations of front-end development. But in the
                         meantime I love playing guitar, reading Stephen King novels, watching horror movies
@@ -59,27 +52,31 @@
                         some of the difficulties of learning an instrument by yourself.
                     </p>
                 </div>
+                <div class="section-item"> 
+                    <img src="images/dark-face.jpg" width="250" class="face-image" alt="My Face on Portrait Mode">
+                </div>
             </section>
         </div>
     </div>
     <!-- Projects Section -->
-    <div class="section-bg-primary margin-top box-shadow">
+    
+    <div class="section-bg-primary margin-top box-shadow conta">
+        <h2>Projects, so far...</h2>
         <h3><i>You Can Solo</i> -- guitar learning mobile app</h3>
         <section class="section-group">
-            
-            <div class="section-item app-picture">
+            <div class="section-item ">
                 <img src="images/app-image.jpg" height="300" width="400" class="project-image" alt="Image Credit(Future)">
-            </div>
-            <div class="section-item">
                 <p>This app helps the beginner, even advanced player, dive deeper into music theory
                     and their own creativity by generating an unlimited amount of chord progressions
                     accompanied by scales patterns, triads and other techniques to get the player playing with  purpose!
                     <i>You Can Solo</i> will help any musician struggling to play different ideas over the chords they already know and love.
                     MIDI jam tracks, with authentic instruments, are available for free with more instruments coming soon. Includes over
                     100+ unique scales, patterns and melodic devices. <br><a href="https://github.com/themlp101" target="_blank">You Can Solo GitHub Repo</a>
-                    <br><a href="https://github.com/themlp101" target="_blank">You Can Solo - Official Website</a></p>
+                <br><a href="https://github.com/themlp101" target="_blank">You Can Solo - Official Website</a></p>
             </div>
-            <div>
+            <div class="section-item">
+                
+            </div>
         </section>    
         <section class="section-group">
             <div class="section-item">
@@ -106,14 +103,19 @@
 
         <!-- Contacts Form -->
         <h2>Contact Me</h2>
-        <section class="section-group">
+        <section class="contact-group contact-container">
+            <ul>
+                <li><a href="https://github.com/themlp101" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/matt-patterson-02265175/" target="_blank">LinkedIn</a></li>
+            </ul>
             
-            <form class="contact-container section-item">
+        <!-- Form uses formspree free server -->
+            <form class="section-item" action="https://formspree.io/myynebgp" method="POST">
                 <div class="contact-item">
                     <label for="firstname">First Name</label>                    
                     <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name..">
                     <label for="email">Email</label>
-                    <input type="email" style="font-size:small" id="email" name="email" placeholder="Your email..">
+                    <input type="email" style="font-size:small" id="email" name="_replyto" placeholder="Your email..">
                 </div>
                 <div class="contact-item-triple">
                     <label for="subject">Subject</label>
@@ -130,7 +132,7 @@
 <!-- Footer Section -->
 
 
-    <footer class="footer-wrapper footer-bg-primary margin-top">
+    <footer class="footer-bg-primary margin-top">
         <div class="footer-group">
             <div class="footer-item">
                 <ul style="list-style-type: none">
@@ -143,7 +145,7 @@
                 </ul>
             </div>
             <div class="iframe">
-                <iframe style="border-radius: 10px; border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50096.83387819755!2d-77.4612981747585!3d38.30146024473374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587311706288!5m2!1sen!2sus" width="500" height="250" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe style="border-radius: 10px; border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50096.83387819755!2d-77.4612981747585!3d38.30146024473374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1587311706288!5m2!1sen!2sus"  frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
         
