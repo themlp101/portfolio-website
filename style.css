@@ -99,31 +99,24 @@ section {
     justify-content: space-evenly;
 }
 
-.section-item, .contact-item, .contact-item-triple {
-    margin: auto;
-}
-
-
 .box-shadow {
     box-shadow: 0px 0px 3px grey;
 }
 
 .contact-group {
     display: flex;
-    flex-flow: wrap;
+    width: 100%;
     justify-content: center;
 }
 
-.contact-container {
-    width: 100%;
-}
-
-.contact-container ul {
+.contact-group ul {
     list-style-type: none;
     margin: 0;
 }
-.contact-item-triple {
-    flex: 3;
+
+form {
+    margin: 0;
+    padding: 0;
 }
 
 form label {
@@ -139,13 +132,16 @@ footer {
 
 .footer-bg-primary {
     width: 100%;
+    overflow: hidden;
+    
 }
 .footer-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center;
     width: 100%;
     padding: 2em;   
+    
 }
 
 .footer-group p {
@@ -154,10 +150,6 @@ footer {
     font-family: 'Share Tech Mono', monospace;
 }
 
-.iframe {
-    
-    margin-right: 10em;
-}
 
 
 /* Body Text Decorations */
@@ -192,7 +184,7 @@ main h2 {
     margin: .4em;
 }
 
-.contact-container label {
+.contact-group label {
   color: #fff;
   font-weight: 700;
   font-family: 'Share Tech Mono', monospace;
@@ -229,11 +221,12 @@ main h2 {
 @media all and (min-width: 600px) {
     .section-group {
         flex-wrap: row wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .footer-group {
-        flex-wrap: row wrap;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 
     form label {
@@ -262,7 +255,7 @@ main h2 {
 
     .section-bg-primary {
         align-self: center;
-        width: 80%;
+        width: 70%;
     }
 }
 

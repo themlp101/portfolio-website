@@ -29,7 +29,7 @@
     <!-- End Navigation Bar -->
     <main>
     <!-- Bio Section -->
-    <div class="section-bg-primary margin-top box-shadow">
+    <div id="about" class="section-bg-primary margin-top box-shadow">
         <div>
             <h2>Bio</h2>
             <section class="section-group">
@@ -60,7 +60,7 @@
     </div>
     <!-- Projects Section -->
     
-    <div class="section-bg-primary margin-top box-shadow">
+    <div id="projects" class="section-bg-primary margin-top box-shadow">
         <h2>Projects, so far...</h2>
         <h3><i>You Can Solo</i> -- guitar learning mobile app</h3>
         <section class="section-group">
@@ -78,7 +78,7 @@
                 
             </div>
         </section>    
-        <section class="section-group">
+        <section id="services" class="section-group">
             <div class="section-item">
                 <ul>
                     <h3>Skills Used</h3>
@@ -99,39 +99,39 @@
                 </ol>
             </div>
         </section>
-        
 
-        <!-- Contacts Form -->
+        
+    </div>
+    <!-- Contacts Form -->    
+    <section id="contact" class="section-bg-primary margin-top box-shadow">
         <h2>Contact Me</h2>
-        <section class="contact-group contact-container">
+        <div class="contact-group">
             <ul>
                 <li><a href="https://github.com/themlp101" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/matt-patterson-02265175/" target="_blank">LinkedIn</a></li>
             </ul>
             
         <!-- Form uses formspree free server -->
-            <form class="section-item" action="https://formspree.io/myynebgp" method="POST">
-                <div class="contact-item">
+            <form action="https://formspree.io/myynebgp" method="POST">
+                <div>
                     <label for="firstname">First Name</label>                    
-                    <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name..">
+                    <input type="text" style="font-size:small" id="firstname" name="firstname" placeholder="Your first name.." required>
                     <label for="email">Email</label>
-                    <input type="email" style="font-size:small" id="email" name="_replyto" placeholder="Your email..">
+                    <input type="email" style="font-size:small" id="email" name="_replyto" placeholder="Your email.."required>
                 </div>
-                <div class="contact-item-triple">
+                <div>
                     <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="font-family:monospace;"></textarea>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="font-family:monospace;" required></textarea>
                     <input class="button box-shadow" type="submit" value="Hello!">
                 </div>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
 
 
     </main>
 
 <!-- Footer Section -->
-
-
     <footer class="footer-bg-primary margin-top">
         <div class="footer-group">
             <div class="footer-item">
