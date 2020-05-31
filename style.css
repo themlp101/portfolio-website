@@ -18,8 +18,8 @@ header {
     border-radius: 0px 0px 5px 5px;
     display: block;
     top: 0;
-    width: 100%;
-    /* margin-bottom: 30px; */
+    width: 100%;    
+    overflow: hidden;
 }
 
 header nav { 
@@ -75,7 +75,7 @@ body {
     background-color: rgba(13, 40, 52, 80%);
     padding: 20px;
     border-radius: 10px;
-    
+    overflow: hidden;
 }
 
 .face-image {
@@ -87,20 +87,21 @@ body {
 
 .project-image {
     border-radius: 5px;
-    float: right;
-    margin: 10px;
     cursor: pointer;
+    width: 50%;
+    margin: auto;
 }
-
 
 .section-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.section-item {
+.pSection-item {
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .box-shadow {
@@ -109,23 +110,25 @@ body {
 
 .contact-group {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    flex-flow: column wrap;
+    padding: 20px;
 }
 
 .contact-group ul {
     list-style-type: none;
     margin: 0;
+    align-self: center;
 }
 
 form {
-    margin: 0;
-    padding: 0;
+    flex-shrink: 1;
+    align-self: center;
 }
 
 form label {
     display: block;
 }
+
 
 /* Footer */
 
@@ -262,9 +265,21 @@ main h2 {
         width: 70%;
     }
 
-    .contact-group {
-        justify-content: space-between;
+    .section-group {
+        justify-content: space-evenly;
     }
+    .contact-group {
+        justify-content: space-evenly;
+    }
+
+    .pSection-item {
+        align-self: center;
+        flex-direction: row;
+    }
+    .title {
+        width: 100%;
+    }
+   
 }
 
 
