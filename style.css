@@ -18,10 +18,8 @@ header {
     border-radius: 0px 0px 5px 5px;
     display: block;
     top: 0;
-    position: fixed;
-    z-index: 100;
     width: 100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 header nav { 
@@ -47,6 +45,8 @@ header h1 {
     text-align: center;
     font-size: 3em;
     margin: auto;
+    color: hsl(29, 100%, 58%);
+    padding: 0;
 }
   
 
@@ -56,25 +56,26 @@ header h1 {
 body {
     background-image: url("images/dark-green-background.jpg");
     background-repeat: repeat;
-    margin: 0;
+    width: 100%;
 }
 
-
-section {
-    align-items: center;
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
 }
 
+.margin-top {
+    margin-top: 20px;
+    padding-top: 60px;
+}
 
 .section-bg-primary {
     background-color: rgba(13, 40, 52, 80%);
     padding: 20px;
-    width: 100%;
     border-radius: 10px;
-    margin: auto;
-}
-
-.margin-top {
-    margin-top: 10em;
+    
 }
 
 .face-image {
@@ -87,8 +88,7 @@ section {
 .project-image {
     border-radius: 5px;
     float: right;
-    margin: 2em;
-    padding: 0;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -97,6 +97,10 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.section-item {
+    align-self: center;
 }
 
 .box-shadow {
@@ -127,27 +131,27 @@ form label {
 
 footer {
     background-color: #000;
-    width: 100%;
+    display: block;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    margin-top: 30px;
   }
 
-.footer-bg-primary {
-    width: 100%;
-    overflow: hidden;
-    
-}
 .footer-group {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 2em;   
-    
+    padding: 20px;
+    justify-items: center;
 }
 
 .footer-group p {
     color: hsl(29, 100%, 58%);
     text-decoration: none;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Share Tech Mono', monospace; 
+}
+
+.footer-item {
+    align-self: center;
 }
 
 
@@ -158,18 +162,25 @@ main h2 {
     text-align: center;
 }
 
-.section-group p, ol, ul, h3 {
+.section-bg-primary h2 {
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2rem;
+}
+
+.section-group p, ol, ul, h2 {
   font-size: 18px;
   font-family: "Baloo Paaji 2", cursive;
   margin: auto;
   color: white;
   padding: 2rem;
 }
-.section-bg-primary h2 {
-    color: #fff;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 2rem;
+
+.section-group h2 {
+    font-size: 1rem;
 }
+
+
 
 .button {
     background-color: transparent;
@@ -198,11 +209,7 @@ main h2 {
     text-transform: uppercase;
     letter-spacing: .2em;
 }
-  header h1 {
-    color: hsl(29, 100%, 58%);
-    padding: 0;
-    margin: 10px;
-  }
+
 
   a {
     color: white;
@@ -218,15 +225,11 @@ main h2 {
 
 /* Media Query */
 
-@media all and (min-width: 600px) {
-    .section-group {
-        flex-wrap: row wrap;
-        justify-content: space-around;
-    }
+@media all and (min-width: 800px) {
 
     .footer-group {
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     form label {
@@ -255,7 +258,12 @@ main h2 {
 
     .section-bg-primary {
         align-self: center;
+        align-content: center;
         width: 70%;
+    }
+
+    .contact-group {
+        justify-content: space-between;
     }
 }
 
